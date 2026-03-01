@@ -73,6 +73,20 @@ int ticket = OrderSend(
    clrBlue
 );
 
+int ticket = OrderSend(
+   XAUUSD,        // current symbol
+   OP_BUY,          // BUY
+   lot,
+   price,
+   3,               // slippage
+   0,               // stop loss
+   0,               // take profit
+   "My Buy Order",
+   12345,           // magic number
+   0,
+   clrBlue
+);
+
 if(ticket < 0)
 {
    Print("Buy failed. Error: ", GetLastError());

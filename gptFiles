@@ -1,0 +1,26 @@
+OP_BUY
+
+Value	Meaning
+OP_BUY	Buy at Ask
+OP_SELL	Sell at Bid
+OP_BUYLIMIT	Pending Buy
+OP_SELLLIMIT	Pending Sell
+OP_BUYSTOP	Pending Buy
+OP_SELLSTOP	Pending Sell
+
+
+OrderSend(
+   Symbol(),
+   OP_BUY,
+   0.10,
+   Ask,
+   3,
+   0,
+   0,
+   "No SL TP",
+   123,
+   0,
+   clrBlue
+);
+
+
